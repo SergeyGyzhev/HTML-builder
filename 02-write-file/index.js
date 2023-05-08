@@ -6,7 +6,7 @@ const rl = readline.createInterface({
   output: process.stdout
 });
 
-const file = fs.createWriteStream('02-write-file\\output.txt', {flags: 'a'});
+const file = fs.createWriteStream('02-write-file\\output.txt');
 
 console.log('Введите текст для записи в файл. Для выхода наберите "exit" или нажмите Ctrl+C');
 rl.on('line', (input) => {
